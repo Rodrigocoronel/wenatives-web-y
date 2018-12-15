@@ -30,3 +30,122 @@
     transform: rotate(360deg);
   }
 }
+
+.h-80{
+  height: 80%;
+}
+
+.title-icons{
+  font-size: 25px;
+  color: #09acc6;
+}
+
+.title-icons-lg{
+  font-size: 25px;
+  color: #09acc6;
+}
+
+.title-clientes{
+  font-size: 16px;
+  color: white;
+  margin-top: 30px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+
+}
+
+.img-quehacemos{
+  background-image: url(./assets/images/quehacemos.jpg);
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center 0px;
+  height: 790px;
+}
+
+.img-clientes{
+  background-color: #323841;
+  height: 400px;
+}
+
+ul{
+  list-style-type: none;
+}
+li{
+  color: white;
+}
+
+li.titulo-li{
+  color: #09acc6;
+  margin-bottom: 10px;
+}
+p{
+  text-align: justify;
+}
+
+p.text-white{
+  color: white;
+}
+
+.text-que{
+  display: inline-block;
+  background-color: rgb(49,198,255);
+  color: white;
+  height: 160px;
+  width: 140px;
+  line-height: 160px;
+  font-size: 50px;
+}
+
+.txt-50px{
+  color : #09acc6; 
+  font-size : 50px;
+}
+
+.txt-63px{
+  color : #09acc6;
+  font-size : 63px;
+}
+
+.text-hacemos{
+  display: inline;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px 2px 2px 0px;
+  color: white;
+  font-size: 50px;
+  padding-right: 13px;
+}
+
+.brand-footer{
+  border-left : 2px solid white;
+  display : inline-block;
+  margin-top: 20px;
+  height : 52px;
+}
+
+.seccionNews{
+  background-image: url('./assets/images/texturaNews.jpeg');
+}
+
+.img-Header{
+  background-image: url('./assets/images/img1.jpg');
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center 0px;
+  height: 760px;
+}
+
+.slogan{
+  vertical-align : top;
+  position : absolute; 
+  bottom : 65px;
+  right : 44px;
+  color : white;
+}
+
+.slogan-image{
+  position: absolute;
+  bottom : 0px;
+  height : 200px;
+  right : 14px;
+}
