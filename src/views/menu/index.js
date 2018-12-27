@@ -13,7 +13,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-import Brand from'../../assets/images/brand.svg';
+import Brand from'../../assets/images/brand-white.png';
 
 import Css from './menu.css';
 
@@ -43,26 +43,7 @@ export default class Example extends React.Component {
 
   handleScroll = () => {
 
-    let {lastScrollY,navBarClass} = this.state;
-
-    console.log('last',lastScrollY)
-    console.log('current', window.scrollY)
-
-    if(window.scrollY > lastScrollY && lastScrollY !== window.scrollY){
-      if(navBarClass !== 'd-none')
-        this.setState({navBarClass : 'sticky-top'});
-    }
-
-    if(window.scrollY < lastScrollY && lastScrollY !== window.scrollY){
-      if( window.scrollY == 0 && lastScrollY > 0){
-        if(navBarClass !== 'start')
-          this.setState({navBarClass : 'sticky-top'});
-      }
-      else{
-        if(navBarClass !== 'sticky-top')
-          this.setState({navBarClass : 'sticky-top'}); 
-      }  
-    }
+    let {lastScrollY} = this.state;
     
     if(lastScrollY !== window.scrollY){
           this.setState({lastScrollY : window.scrollY});
@@ -77,19 +58,18 @@ export default class Example extends React.Component {
   }
   render() {
 
-    let {navBarClass} = this.state;
     let {lastScrollY} = this.state;
     let brand_height, brand_width;
     if(lastScrollY > 100){
-      brand_height ="32px";
-      brand_width = "75px";
+      brand_height ="40px";
+      brand_width = "140px";
     }else{
-      brand_height ="64px";
-      brand_width = "150px";
+      brand_height ="60px";
+      brand_width = "190px";
     }
     return (
         <Navbar color="dark" dark expand="md" className="fixed-top top-bar"   style={{backGroundColor : 'black', opacity : '.9'}}>
-          <NavbarBrand href="/"><img className="ml-5" src={Brand} alt="brand" height={brand_height} width={brand_width}/></NavbarBrand>
+          <NavbarBrand href="/"><img className="ml-5 logo" src={Brand} alt="brand" height={brand_height} width={brand_width}/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

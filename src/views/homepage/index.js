@@ -12,12 +12,24 @@ import ImgRedes from '../../assets/images/icn-redes.svg'
 import ImgServidores from '../../assets/images/icn-servidores.svg'
 import ImgMarketing from '../../assets/images/icn-marketing.svg'
 
-import Img1 from '../../assets/images/img1.jpg'
+import LogoAri from '../../assets/images/logos-wn_ARI.svg'
+import LogoMaxGroup from '../../assets/images/logos-wn_MAXGROUP.svg'
+import LogoMaxi from '../../assets/images/logos-wn_maxicomm.svg'
+import LogoPapas from '../../assets/images/logos-wn_PAPAS.svg'
+import LogoPineda from '../../assets/images/logos-wn_PINEDA.svg'
+import LogoPochteca from '../../assets/images/logos-wn_POCHTECA.svg'
 
 import Carousel from './carousel'
 
 export default class Example extends React.Component {
 
+  constructor(props){
+    super(props)
+
+    this.state = {
+
+    }
+  }
 
   render() {
     return (
@@ -41,17 +53,14 @@ export default class Example extends React.Component {
               <img src={Header2} height="100%" width="40px" alt="header1" style={{position : 'absolute', right : '15px'}}/>
             </div>
             <div className="col-12 col-sm-6">
-              <div className="txt-50px">
-                Lorem Ipsum
-              </div>
               <div className="txt-63px">
-                Lorem Lorem Ipsum
+                We Natives
               </div>
               <div style={{color : 'black', fontSize : '20px', textAlign : 'justify'}}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                Somos un equipo de especialistas apasionados por la innovación constante
+                y el desarrollo de soluciones para mejorar la competitividad de tu empresa.
+                Buscamos comprender las necesidades y expectativas de tu negocio para
+                ofrecerte soluciones “Out of the Box”.
               </div>
             </div>
             <div className="col-12 col-sm-3 align-self-end">
@@ -59,9 +68,11 @@ export default class Example extends React.Component {
             </div>
           </div>
           <div className="row justify-content-center" style={{height : '200px'}}>
-            <div className="col-7 text-center">
-              <img src={Header3} height="100px" width="100%" alt="header1" style={{position : 'absolute', left : '11px'}}/>
+            <div className="col-3"></div>
+            <div className="col-7">
+              <img src={Header3} height="100px" width="100%" alt="header1" style={{    position: 'absolute',left : '-55px'}}/>
             </div>
+            <div className="col-2"></div>
           </div>
         </div>
         <div className="container mb-5">
@@ -94,21 +105,21 @@ export default class Example extends React.Component {
         <div className="container-fluid img-clientes">
           <div className="row">
             <div className="col-12 text-center align-self-center">
-              <div className="title-clientes">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div className="title-clientes">Nuestros clientes</div>
             </div>
           </div>
           <div className="row h-80 align-items-center">
             <div className="col-12 col-sm-3 text-center">
-              <h3>Cliente 1</h3>
+              <img src={LogoAri} className="" height="200" width="200"/>
             </div>
             <div className="col-12 col-sm-3 text-center">
-              <h3>cliente 2</h3>
+              <img src={LogoMaxi} className="" height="200" width="200"/>
             </div>
             <div className="col-12 col-sm-3 text-center">
-              <h3>Cliente 3</h3>
+              <img src={LogoMaxGroup} className="" height="200" width="200"/>
             </div>
             <div className="col-12 col-sm-3 text-center">
-              <h3>Cliente 4</h3>
+              <img src={LogoPineda} className="" height="200" width="200"/>
             </div>
           </div>
         </div>

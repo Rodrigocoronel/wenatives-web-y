@@ -8,6 +8,10 @@ import {
 } from 'reactstrap';
 
 import Img1 from '../../assets/images/img1.jpg'
+import Barco from '../../assets/images/barco.jpg'
+import Bosque from '../../assets/images/bosque.jpg'
+
+import './carousel.css'
 
 const items = [
   {
@@ -15,11 +19,11 @@ const items = [
     altText: 'Slide 1',
   },
   {
-    src : Img1,
+    src : Barco,
     altText: 'Slide 2',
   },
   {
-    src : Img1,
+    src : Bosque,
     altText: 'Slide 3',
   }
 ];
@@ -63,12 +67,12 @@ class Example extends Component {
   render() {
     const { activeIndex } = this.state;
 
-    const slides = items.map((item) => {
+    const slides = items.map((item,i) => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
-          key={item.src}
+          key={i}
         >
           <img src={item.src} alt={item.altText} />
         </CarouselItem>
@@ -77,6 +81,7 @@ class Example extends Component {
 
     return (
       <Carousel
+        className="carousel-fade"
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
