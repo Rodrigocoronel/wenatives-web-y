@@ -19,6 +19,14 @@ import LogoPapas from '../../assets/images/logos-wn_PAPAS.svg'
 import LogoPineda from '../../assets/images/logos-wn_PINEDA.svg'
 import LogoPochteca from '../../assets/images/logos-wn_POCHTECA.svg'
 
+import Php from '../../assets/images/php.png'
+import Nodejs from '../../assets/images/nodejs.png'
+import Reactjs from '../../assets/images/reacjs.png'
+import Html5 from '../../assets/images/html5.png'
+import Csharp from '../../assets/images/csharp.png'
+import Js from '../../assets/images/js.png'
+import Laravel from '../../assets/images/laravel.png'
+
 import Carousel from './carousel'
 
 export default class Example extends React.Component {
@@ -124,38 +132,34 @@ export default class Example extends React.Component {
           </div>
         </div>
         <div className="container-fluid seccionNews">
-          <div className="row align-items-center pt-5 pb-5" style={{}}>
+          <div className="row justify-content-center pt-5 pb-5" style={{}}>
             <div className="col-7" style={{borderLeft : '20px solid #1ec5ea'}}>
-              <h1>LOREM</h1>
-              <h1>LOREM LOREM LOREM SIMPSON</h1>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+              <h1>Soluciones en:</h1>
             </div>
           </div>
-          <div className="row align-items-center pb-5">
-            <div className="col-12 col-sm-3">
-              <h3>LOREM</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-              <button>LOREM LOREM</button>
+          <div className="row  pb-5">
+            <div className="col-12 col-sm-3 text-center">
+              <img src={Php} width="" height="100px"/>
             </div>
-            <div className="col-12 col-sm-3">
-              <h3>LOREM</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-              <button>LOREM LOREM</button>
+            <div className="col-12 col-sm-3 text-center">
+              <img src={Laravel} width="" height="100px"/>
             </div>
-            <div className="col-12 col-sm-3">
-              <h3>LOREM</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-              <button>LOREM LOREM</button>
+            <div className="col-12 col-sm-3 text-center">
+              <img src={Reactjs} width="" height="100px"/>
             </div>
-            <div className="col-12 col-sm-3">
-              <h3>LOREM</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-              <button>LOREM LOREM</button>
+             <div className="col-12 col-sm-3 text-center">
+              <img src={Js} width="" height="100px"/>
+            </div>
+          </div>
+          <div className="row pt-5">
+            <div className="col-12 col-sm-3 text-center">
+              <img src={Nodejs} width="" height="200px"/>
+            </div>
+            <div className="col-12 col-sm-3 text-center">
+              <img src={Html5} width="" height="150px"/>
+            </div>
+            <div className="col-12 col-sm-3 text-center">
+              <img src={Csharp} width="" height="200px"/>
             </div>
           </div>
         </div>
@@ -164,3 +168,11 @@ export default class Example extends React.Component {
     )
   }
 }
+
+// import Php from '../../assets/images/php.png'
+// import Nodejs from '../../assets/images/nodejs/png'
+// import Reactjs from '../../assets/images/reactjs.png'
+// import Html5 from '../../assets/images/html5.png'
+// import Csharp from '../../assets/images/csharp/png'
+// import Js from '../../assets/images/js.png'
+// import Laravel from '../../assets/images/laravel.png'

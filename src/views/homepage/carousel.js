@@ -19,11 +19,11 @@ const items = [
     altText: 'Slide 1',
   },
   {
-    src : Barco,
+    src : Img1,
     altText: 'Slide 2',
   },
   {
-    src : Bosque,
+    src : Img1,
     altText: 'Slide 3',
   }
 ];
